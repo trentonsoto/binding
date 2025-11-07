@@ -1,0 +1,11 @@
+:root{
+    --bg-color: purple;
+    --fg-color: beige;
+}
+
+
+
+body{
+    padding: 2.5rem;
+    background-color: var(--bg-color);
+}
