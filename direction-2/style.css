@@ -30,6 +30,7 @@ h1 {
 
 em {
     font-weight: 600;
+    /* from a youtube video for the text highlight */
     background: linear-gradient(
         to bottom,
         transparent 40%,
