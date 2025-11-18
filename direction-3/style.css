@@ -1,4 +1,20 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e55636;
+    color: #17064a;
+}
 
+ol {
+    display: flex;
+    justify-content: space-around;
+
+    .li {
+        /* border: #17064a; */
+    }
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 13rem;
 }
