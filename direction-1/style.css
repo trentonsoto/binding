@@ -1,10 +1,7 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
-
 }
-
-
 
 :root {
     background-color: black;
@@ -20,6 +17,13 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
+
+
+
+
+
+
+/************ FROM A YOUTUBE VIDEO - https://www.youtube.com/watch?v=dAIVbLrAb_U&t=11s ************/
 .hamburger-menu {
     --x-width: calc(var(--hamburger-height) *1.41421356237);
     display: flex;
@@ -29,7 +33,7 @@
     position: fixed;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
-    z-index: 3;
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -54,10 +58,7 @@
         rotate var(--animation-timing), 
         translate var(--animation-timing), 
         background-color var(--animation-timing);
-
 }
-
-
 
 .hamburger-menu input {
     appearance: none;
@@ -71,6 +72,7 @@
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -1);
 }
+
 .hamburger-menu:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
@@ -80,7 +82,6 @@
     opacity: 0;
     width: 0;
 }
-
 
 .sidebar {
     position: fixed;
@@ -98,6 +99,12 @@
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0 0;
 }
+
+/******************************************************************/
+
+
+
+
 
 
 h1 {
@@ -129,4 +136,10 @@ h1 {
 
 body {
     margin: 0;
+}
+
+p {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Futura';
 }
