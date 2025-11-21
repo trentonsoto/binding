@@ -2,6 +2,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #e55636;
     color: #17064a;
+    /* color: #410909; */
+
 }
 
 ol {
@@ -17,4 +19,22 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 13rem;
+        color: #17064a;
+
+}
+
+.reading {
+    p {
+        padding-block: 1.5rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+            color: #410909;
+
+    }
+
+}
+
+em {
+        color: #17064a;
+
 }
