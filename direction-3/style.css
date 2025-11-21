@@ -19,22 +19,42 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 13rem;
-        color: #17064a;
+    color: #17064a;
+    padding-block: 5.5rem;
 
 }
 
 .reading {
+    padding-block-start: 4rem;
     p {
         padding-block: 1.5rem;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5rem;
-            color: #410909;
-
+        color: #410909;
+        width: 70rem;
+        padding-inline-start: 4.5rem;
     }
 
 }
 
 em {
         color: #17064a;
+
+}
+
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10rem;
+    border-top: 2px solid #17064a;
+    border-bottom: 2px solid #17064a;
+    width: 100vw;
+    /* can i combine border top and bottom into one? */
+
+   p {
+    padding: 4rem;
+    border-left: 2px solid #17064a;
+   }
 
 }
