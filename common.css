@@ -59,7 +59,7 @@ nav .home-link {
     display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .links-container {
         flex-direction: column;
         align-items: flex-start;
