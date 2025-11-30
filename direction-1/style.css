@@ -1,6 +1,6 @@
 :root {
     --color-1: #0f1016;
-    --text-color: #f0f0f0;
+    --text-color: #faf9f6;
     --accent-color: #006aff;
 }
 
@@ -11,20 +11,30 @@
 
 nav {
     height: 60px;
-    width: 100%;
-    background-color: var(--color-1);
+    /* background-color: var(--color-1); */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 20; */
 }
 
+
+
+/* EVERYTHING BELOW IS FROM A YOUTUBE VIDEO ON NAVS, I USED TWO TO COMBINE THE NAV ANIMATION, AND THEN ANOTHER TO CHANGE THE BACKGROUND TO A BLUR EFFECT*/
+
+
+/* NAV BAR */
 .links-container {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 nav a {
@@ -33,18 +43,69 @@ nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--color-1);
 }
 
 nav a:hover {
     background-color: var(--accent-color);
 }
 
-
-header, nav {
-    width: 100%;
-    max-width: 100%;
+#sidebar-active {
+    display: none;
 }
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .links-container{
+        /* display: none; */
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        /* background-color: var(--text-color); */
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+        transition: 0.75s ease-out;
+    }
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        /* display: flex; */
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+
+
+
+
+
+
 
 
 body {
@@ -90,8 +151,7 @@ em {
     background: linear-gradient(
         to bottom,
         transparent 40%,
-        #fce041
-    );
+        #fce041);
 }
 
 .reading {
