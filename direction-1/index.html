@@ -20,26 +20,32 @@
 	<body>
 
          
-            <label class="hamburger-menu">
+            <!-- <label class="hamburger-menu">
                 <input type="checkbox" />
             </label>
             <aside class="sidebar">
                 <nav>
-                    <ol>
-                         <li><a href="../index.html">Back to home</a></li>
-                         <li><a href="../direction-1/index.html">Direction 1</a></li>
-                         <li><a href="../direction-2/index.html">Direction 2</a></li>
-                         <li><a href="../direction-3/index.html">Direction 3</a></li>
-                     </ol>
-                </nav>
-            </aside>
+				</nav>
+            </aside> -->
             
+			<nav>
+				<input type="checkbox" id="sidebar-active">
+				<label for="sidebar-active" class="open-sidebar-button">
+					<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+				</label>
+
+				<div class="links-container">
+					<label for="sidebar-active" class="close-sidebar-button">
+						<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+					</label>
+
+					<a class="home-link" href="../index.html">Home</a>
+					<a href="../direction-1/index.html">Direction 1</a>
+					<a href="../direction-2/index.html">Direction 2</a>
+					<a href="../direction-3/index.html">Direction 3</a>
+				</div>
+			</nav>
             
-            
-            
-            
-            
-        
 
 		<header>
 				<h1 id="top" class="topheader">WHY WRITE ABOUT GRAPHIC DESIGN?</h1>
