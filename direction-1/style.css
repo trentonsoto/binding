@@ -5,14 +5,22 @@
 }
 
 
+
+/* FOOTNOTES (THE NUMBERS THEMSELVES) */
+/* FROM YOUTUBE */
 .notes-reference {
     font-size: 1rem;
     font-weight: bold;
     vertical-align: super;
     color: #333;
+    &:hover {
+        color: #daa520;
+    }
 }
 
 
+/* ACCORDION DROP DOWN */
+/* FROM MDN AND YOUTUBE */
 #accordion {
     padding: 1rem 3rem 2rem 5rem;
     width: 70%; 
@@ -26,7 +34,6 @@
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #0f1016;
-
 }
 
 #accordion li label {
@@ -44,7 +51,6 @@
     color: var(--color-1);
 }
 
-
 #accordion label + input[type="radio"] {
     display: none;
 }
@@ -53,8 +59,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
-    
-
     p {
         font-size: 1.2rem;
         margin: 0;
@@ -62,28 +66,40 @@
     }
 }
 
-
 #accordion label + input[type="checkbox"]:checked + .content{
     max-height: 400px;
 }
 
-.notes-reference:hover {
-        color: #daa520;
-        /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
-    } 
+ 
 
 
 
 
 @media (max-width: 500px) {
+    #accordion {
+        padding: 0.875rem 1rem 2rem 3rem;
+        width: 80%; 
+        /* margin: 1rem; */
+    }
+
+    #accordion .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        p {
+            font-size: 1rem;
+            margin: 0;
+            padding: 0 0 1% 7%;
+        }
+    }
+
+    #accordion li {
+        /* padding: 0; */
+    }
    
 }
 
 
-
-/* .test {
-    background-color: blanchedalmond;
-} */
 
 
 

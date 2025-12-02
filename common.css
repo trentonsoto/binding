@@ -10,9 +10,10 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 10rem;
+    font-size: 9.5rem;
     padding-block-start: 10rem;
     font-weight: 500;
+    margin-inline: 3%;
 }
 
 .information {
@@ -98,10 +99,8 @@ nav .home-link {
 }
 
 
-
-
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    /* NAV BAR */
     .links-container {
         flex-direction: column;
         align-items: flex-start;
@@ -109,7 +108,7 @@ nav .home-link {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 300px;
+        width: 70%;
         /* background-color: var(--accent-color); */
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
@@ -143,6 +142,38 @@ nav .home-link {
         z-index: 9;
     }
 
+    /* EVERYTHING ELSE */
+    h1 {
+        margin-inline: 3%;
+        text-align: center;
+        font-size: 5.3rem;
+        padding-block-start: 10rem;
+        font-weight: 500;
+    }
+
+     .information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.1rem;
+        padding: 4rem 0 4rem 0;
+    }
+
+    .reading p {
+        padding: 3rem;
+        font-size: 1rem;
+}
+}
+
+@media (min-width: 704px) and (max-width: 768px) {
+    .information {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 500px) {
     h1 {
         margin-block-start: 4rem;
         margin-inline: 1rem;
@@ -158,8 +189,8 @@ nav .home-link {
         align-items: center;
         gap: 0.875rem;
         font-size: 1rem;
-        padding-block-start: 2rem;
-        padding-block-end: 4rem; 
+        padding: 4rem 0 4rem 0;
+        /* padding-block-end: 4rem;  */
     }
 
     .reading p {
@@ -169,6 +200,8 @@ nav .home-link {
             line-height: 1.2rem;
     }
 }
+
+
 
 
 
