@@ -11,6 +11,43 @@
     vertical-align: super;
 }
 
+details {
+    width: 200px;
+    background: #0f1016;
+    color: #faf9f6;
+    padding: 10px;
+    border-radius: 4px;
+    /* padding-inline-start: 2rem; */
+}
+
+summary {
+    font-size: 16px;
+}
+
+
+#accordion {
+    margin: 1rem auto;
+    width: 250px; 
+}
+
+#accordion li{
+    list-style: none;
+    margin-bottom: 1rem;
+    width: 100%; 
+    background: #fce041;
+    padding: 1rem;
+    border-radius: 4px;
+
+}
+
+#accordion li label {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 
 @media (max-width: 500px) {
    
