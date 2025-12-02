@@ -5,7 +5,11 @@
 }
 
 
-
+.notes-reference {
+    font-size: small;
+    font-weight: bold;
+    vertical-align: super;
+}
 
 
 @media (max-width: 500px) {
