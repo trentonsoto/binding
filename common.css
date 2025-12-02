@@ -158,9 +158,8 @@ nav .home-link {
         align-items: center;
         gap: 0.875rem;
         font-size: 1rem;
-        margin-block-start: 2rem;
-        /* margin-block-end: 2rem; */
-        /* padding-block-end: 10rem; */ 
+        padding-block-start: 2rem;
+        padding-block-end: 4rem; 
     }
 
     .reading p {
