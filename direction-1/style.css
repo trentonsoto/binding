@@ -89,6 +89,12 @@
         /* padding-block-start: 4%; */
     }
 
+    .notes-reference {
+        font-size: 1rem;
+        top: -0.75rem;
+        font-weight: bold;
+    }
+
     #accordion {
         margin-left: 0rem;
     }
@@ -108,7 +114,6 @@
         border-radius: 6px;
         border: 1px solid var(--footnote-color);
         padding: 0.4rem 1rem 0.7rem;
-
         &:hover {
             border: 1.5px solid var(--footnote-color);
         }
