@@ -26,7 +26,7 @@
 /* FROM MDN AND YOUTUBE */
 #accordion {
     padding: 1rem 3rem 2rem 5rem;
-    width: 70%; 
+    width: 100%; 
 }
 
 #accordion li{
@@ -74,6 +74,54 @@
     max-height: 400px;
 }
 
+@media (min-width: 1350px) {
+    .reading p {
+        /* padding-inline-end: 30%; */
+        max-width: 70ch;
+    }
+
+    .note {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+        padding-inline-end: 6%;
+        /* padding-inline-start: 4%; */
+        /* padding-block-start: 4%; */
+    }
+
+    #accordion {
+        margin-left: 0rem;
+    }
+
+    .note #accordion {
+        position: sticky;
+        top: 5rem;
+        z-index: 1;
+    }
+
+    .note ul#accordion {
+        margin-top: 2rem;
+        /* omg, this took forever to figure out */
+    }
+
+    #accordion li{
+        border-radius: 6px;
+        border: 1px solid var(--footnote-color);
+        padding: 0.4rem 1rem 0.7rem;
+
+        &:hover {
+            border: 1.5px solid var(--footnote-color);
+        }
+    }
+
+    #accordion li label:hover {
+        color: var(--color-1);
+    }
+
+    #accordion li span:hover {
+        color: var(--color-1);
+    }
+}
 
 
  /* H1 FIXES */
