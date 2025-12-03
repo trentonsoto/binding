@@ -20,7 +20,9 @@ h1 {
     display: flex;
     justify-content: space-around;
     padding-block-end: 10rem;
-    
+    padding-block-start: 1.5rem;
+    font-size: 1.7rem;
+
     .author {
         font-weight: 600;
     }
@@ -99,6 +101,41 @@ nav .home-link {
 }
 
 
+/* MEDIA BREAKPOINT */
+@media (max-width: 1250px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .information {
+        font-size: 1.5rem;
+    }
+
+    .reading p {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+/* MEDIA BREAKPOINT */
+@media (max-width: 1024px) {
+     h1 {
+        font-size: 6.3rem;
+        padding-block-start: 10rem;
+    }
+
+    .information {
+        font-size: 1.2rem;
+    }
+
+    .reading p {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* MEDIA BREAKPOINT */
 @media (max-width: 768px) {
     /* NAV BAR */
     .links-container {
@@ -144,11 +181,8 @@ nav .home-link {
 
     /* EVERYTHING ELSE */
     h1 {
-        margin-inline: 3%;
-        text-align: center;
         font-size: 5.3rem;
         padding-block-start: 10rem;
-        font-weight: 500;
     }
 
      .information {
@@ -157,30 +191,43 @@ nav .home-link {
         align-items: center;
         gap: 1rem;
         font-size: 1.1rem;
-        padding: 4rem 0 4rem 0;
+        padding: 3rem 0 3rem 0;
     }
 
     .reading p {
-        padding: 3rem;
-        font-size: 1rem;
-}
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
 }
 
+/* FIX FOR INFORMATION TEXT */
 @media (min-width: 704px) and (max-width: 768px) {
     .information {
         font-size: 1.4rem;
     }
 }
 
+/* FIX FOR BODY TEXT */
+@media (min-width: 685px) and (max-width: 768px) {
+    .reading p {
+        font-size: 1.5rem;
+    }
+}
 
+/* FIX FOR BODY TEXT */
+@media (min-width: 501px) and (max-width: 684px) {
+    .reading p {
+        font-size: 1.2rem;
+    }
+}
+
+/* MEDIA BREAKPOINT */
 @media (max-width: 500px) {
     h1 {
         margin-block-start: 4rem;
         margin-inline: 1rem;
-        text-align: center;
         font-size: 3.3rem;
-        padding-block-start: 3rem;
-        font-weight: 500;
+        padding-block-start: 6rem;
     }
 
     .information {
@@ -189,12 +236,12 @@ nav .home-link {
         align-items: center;
         gap: 0.875rem;
         font-size: 1rem;
-        padding: 4rem 0 4rem 0;
+        padding: 3rem 0 3rem 0;
         /* padding-block-end: 4rem;  */
     }
 
     .reading p {
-            padding: 1rem 2rem 1rem 2rem;
+            padding: 1rem 1.2rem 1rem 1.2rem;
             /* margin: 0 0 1.5rem; */
             font-size: 1rem;
             line-height: 1.2rem;

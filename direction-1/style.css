@@ -2,6 +2,7 @@
     --color-1: #0f1016;
     --text-color: #faf9f6;
     --accent-color: #fce041;
+    --footnote-color: #474747;
 }
 
 
@@ -11,8 +12,10 @@
 .notes-reference {
     font-size: 1rem;
     font-weight: bold;
-    vertical-align: super;
-    color: #333;
+    /* vertical-align: super; */
+    position: relative;
+    top: -0.2rem;
+    color: var(--footnote-color);
     &:hover {
         color: #daa520;
     }
@@ -33,7 +36,8 @@
     /* background: beige; */
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #0f1016;
+    border: 1px solid var(--footnote-color);
+    color: #474747;
 }
 
 #accordion li label {
@@ -48,7 +52,7 @@
 
 #accordion li label span{
     font-size: 22px;
-    color: var(--color-1);
+    color: var(--footnote-color);
 }
 
 #accordion label + input[type="radio"] {
@@ -71,8 +75,39 @@
 }
 
  
+/* FIX FOR H1 TEXT */
+@media (min-width: 1025px) and (max-width: 1072px) {
+    h1{
+        font-size: 6.5rem;
+    }
+}
+
+/* FIX FOR HEADLINE TEXT */
+@media (min-width: 769px) and (max-width: 965px) {
+    h1{
+        font-size: 5rem;
+    }
+}
 
 
+@media (max-width: 768px) {
+    .notes-reference {
+        font-size: 0.85rem;
+    }
+}
+
+/* FIX FOR HEADLINE TEXT */
+@media (min-width: 690px) and (max-width: 768px) {
+    h1{
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 689px) {
+    h1 {
+        font-size: 3.7rem;
+    }
+}
 
 
 @media (max-width: 500px) {
@@ -93,8 +128,8 @@
         }
     }
 
-    #accordion li {
-        /* padding: 0; */
+    .notes-reference {
+        font-size: 0.75rem;
     }
    
 }
