@@ -82,41 +82,56 @@
     }
 }
 
-/* FIX FOR HEADLINE TEXT */
+/* FIX FOR H1 TEXT */
 @media (min-width: 769px) and (max-width: 965px) {
     h1{
         font-size: 5rem;
     }
 }
 
-
-@media (max-width: 768px) {
-    .notes-reference {
-        font-size: 0.85rem;
-    }
-}
-
-/* FIX FOR HEADLINE TEXT */
+/* FIX FOR H1 TEXT */
 @media (min-width: 690px) and (max-width: 768px) {
     h1{
         font-size: 4.5rem;
     }
 }
 
+/* FIX FOR H1 TEXT */
 @media (min-width: 501px) and (max-width: 689px) {
     h1 {
         font-size: 3.7rem;
     }
 }
 
+/* FIX FOR H1 TEXT */
+@media (max-width: 443px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+}
 
+
+
+
+
+
+
+/* MEDIA BREAKPOINT */
+@media (max-width: 768px) {
+    .notes-reference {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* MEDIA BREAKPOINT */
 @media (max-width: 500px) {
     #accordion {
         padding: 0.875rem 1rem 2rem 3rem;
         width: 80%; 
         /* margin: 1rem; */
     }
-
+    
     #accordion .content {
         max-height: 0;
         overflow: hidden;
@@ -127,13 +142,12 @@
             padding: 0 0 1% 7%;
         }
     }
-
+    
     .notes-reference {
         font-size: 0.75rem;
     }
-   
+    
 }
-
 
 
 
