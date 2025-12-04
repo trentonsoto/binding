@@ -39,6 +39,9 @@ h3 {
     }
 }
 
+/* .footnotes-2 {
+    position: sticky;
+} */
 
 #drop-down .content {
     max-height: 0;
@@ -80,8 +83,8 @@ h3 {
 
 @media (min-width: 1350px) {
     .reading-container {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
+        /* display: grid; */
+        /* grid-template-columns: 3fr 1fr; */
         align-items: start;
     }
 
@@ -90,14 +93,21 @@ h3 {
         font-size: 2rem;
     }
 
-    .footnotes-2 p {
-        font-size: 1rem;
-        padding-inline-start: 3rem;
-        padding: 0;
-        position: sticky;
-        top: 6rem;
-        height: fit-content;
+    .footnotes-2 {
+        font-size: 1.5rem;
+        margin-inline-start: 5rem;
+        /* position: grid; */
+        /* align-items: flex-end; */
+        /* position: sticky;  */
+        /* justify-content: end; */
+        /* top: 6rem; */ 
+        /* align-items: flex-end; */
+        /* height: fit-content; */
         /* position: top; */
+    }
+
+    .footnotes {
+        position: sticky;
     }
 
 
