@@ -14,7 +14,6 @@ h3 {
 }
 
 
-
 #drop-down {
     padding-inline-start: 3rem;
     width: 90%; 
@@ -61,13 +60,13 @@ h3 {
 #drop-down li label .arrow{
     font-size: 2rem;
     color: var(--footnote-color);
-    padding-inline-end: 3rem;
+    padding-inline-end: 25rem;
     /* rotate: 180deg; */
 }
 
 
 #drop-down li input[type="checkbox"]:checked ~ .content{
-    max-height: 1300px;
+    max-height: 1500px;
 }
 
 #drop-down li label input[type="checkbox"]:checked + label .arrow{
@@ -75,6 +74,34 @@ h3 {
     transition: 0.4s ease-out;
 }
 
+
+
+
+
+@media (min-width: 1350px) {
+    .reading-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+    }
+
+    .reading p {
+        max-width: 60ch;
+        font-size: 2rem;
+    }
+
+    .footnotes-2 p {
+        font-size: 1rem;
+        padding-inline-start: 3rem;
+        padding: 0;
+        position: sticky;
+        top: 6rem;
+        height: fit-content;
+        /* position: top; */
+    }
+
+
+}
 @media (max-width: 500px) {
     
 }
