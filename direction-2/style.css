@@ -63,7 +63,7 @@ h3 {
 #drop-down li label .arrow{
     font-size: 2rem;
     color: var(--footnote-color);
-    padding-inline-end: 25rem;
+    padding-inline-end: 20rem;
     /* rotate: 180deg; */
 }
 
@@ -78,14 +78,14 @@ h3 {
 }
 
 
-
+.footnotes-2 {
+            margin-block-end: 30rem;
+        }
 
 
 @media (min-width: 1350px) {
     .reading-container {
-        /* display: grid; */
-        /* grid-template-columns: 3fr 1fr; */
-        align-items: start;
+    
     }
 
     .reading p {
@@ -93,23 +93,15 @@ h3 {
         font-size: 2rem;
     }
 
-    .footnotes-2 {
-        font-size: 1.5rem;
-        margin-inline-start: 5rem;
-        /* position: grid; */
-        /* align-items: flex-end; */
-        /* position: sticky;  */
-        /* justify-content: end; */
-        /* top: 6rem; */ 
-        /* align-items: flex-end; */
-        /* height: fit-content; */
-        /* position: top; */
+    .footnotes-2 p {
+        padding-inline-end: 24rem;
+        font-size: 2rem;
     }
 
-    .footnotes {
-        position: sticky;
+    main {
+        display: flex;
+        flex-direction: row-reverse;
     }
-
 
 }
 @media (max-width: 500px) {
