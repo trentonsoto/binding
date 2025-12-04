@@ -15,7 +15,21 @@ h3 {
 
 
 
+#accordion {
+    padding: 1rem 3rem 2rem 5rem;
+    width: 100%; 
+}
 
+#accordion li{
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%; 
+    /* background: beige; */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--footnote-color);
+    color: #474747;
+}
 
 
 
