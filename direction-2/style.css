@@ -15,22 +15,43 @@ h3 {
 
 
 
-#accordion {
-    padding: 1rem 3rem 2rem 5rem;
-    width: 100%; 
+#drop-down {
+    padding-inline-start: 3rem;
+    width: 90%; 
 }
 
-#accordion li{
-    list-style: none;
-    margin-bottom: 10px;
-    width: 100%; 
-    /* background: beige; */
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid var(--footnote-color);
-    color: #474747;
+/* #drop-down .first {
+    font-size: large;
+} */
+
+#drop-down li label {
+    /* padding-inline-start: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 2.45rem;
+    font-weight: 600;
 }
 
+
+#drop-down .content {
+    p {
+        /* font-size: 1rem; */
+        /* margin: 0; */
+        /* padding: 2% 0% 2% 6%; */
+        /* padding-inline-start: 3rem; */
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+#drop-down li label span{
+    font-size: 2rem;
+    color: var(--footnote-color);
+    padding-inline-end: 3rem;
+}
 
 
 @media (max-width: 500px) {
