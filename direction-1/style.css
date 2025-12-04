@@ -56,7 +56,7 @@
     color: var(--footnote-color);
 }
 
-#accordion label + input[type="radio"] {
+#accordion label + input[type="accordion"] {
     display: none;
 }
 
@@ -136,6 +136,13 @@
         width: 60%; 
         /* margin: 1rem; */
     }
+
+    #accordion .content {
+        p {
+            margin: 0 2% 0 0;
+            padding: 2% 0% 2% 6%;
+        }
+    }
 }
 
 
@@ -184,7 +191,7 @@
 
      #accordion {
         padding: 0.875rem 1rem 2rem 3rem;
-        width: 80%; 
+        width: 60%; 
         /* margin: 1rem; */
     }
 }
@@ -194,7 +201,7 @@
 @media (max-width: 500px) {
     #accordion {
         padding: 0.875rem 1rem 2rem 3rem;
-        width: 80%; 
+        width: 60%; 
         /* margin: 1rem; */
     }
     
