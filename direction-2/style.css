@@ -20,12 +20,14 @@ h3 {
     width: 90%; 
 }
 
-/* #drop-down .first {
-    font-size: large;
-} */
+#drop-down li {
+    list-style: none;
+    margin-block-end: 3rem;
+}
+
 
 #drop-down li label {
-    /* padding-inline-start: 3rem; */
+    padding-block-end: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,23 +38,38 @@ h3 {
 
 
 #drop-down .content {
-    p {
-        /* font-size: 1rem; */
-        /* margin: 0; */
-        /* padding: 2% 0% 2% 6%; */
-        /* padding-inline-start: 3rem; */
-        padding: 0;
-        margin: 0;
-    }
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+#drop-down .content p {
+    padding: 0;
+    margin: 0;
+    padding-block-end: 3rem;
+}
+
+#drop-down li input[type="checkbox"] {
+    display: none;
 }
 
 
-#drop-down li label span{
+#drop-down li label .arrow{
     font-size: 2rem;
     color: var(--footnote-color);
     padding-inline-end: 3rem;
+    /* rotate: 180deg; */
 }
 
+
+#drop-down li input[type="checkbox"]:checked ~ .content{
+    max-height: 1100px;
+}
+
+#drop-down li label input[type="checkbox"]:checked + label .arrow{
+    /* rotate: 180deg; */
+    transition: 0.4s ease-out;
+}
 
 @media (max-width: 500px) {
     
