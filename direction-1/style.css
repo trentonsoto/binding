@@ -147,6 +147,13 @@
 
 
  /* H1 FIXES */
+
+@media (min-width: 1351px) and (max-width:1455px) {
+    h1 {
+        font-size: 7rem;
+    }
+} 
+
 @media (min-width: 1025px) and (max-width: 1072px) {
     h1{
         font-size: 6.5rem;

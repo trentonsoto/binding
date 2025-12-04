@@ -46,7 +46,7 @@ h3 {
 #drop-down .content p {
     padding: 0;
     margin: 0;
-    padding-block-end: 3rem;
+    padding-block-end: 6rem;
 }
 
 #drop-down li input[type="checkbox"] {
@@ -63,7 +63,7 @@ h3 {
 
 
 #drop-down li input[type="checkbox"]:checked ~ .content{
-    max-height: 1100px;
+    max-height: 1200px;
 }
 
 #drop-down li label input[type="checkbox"]:checked + label .arrow{
