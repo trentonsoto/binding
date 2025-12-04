@@ -63,7 +63,7 @@ h3 {
 
 
 #drop-down li input[type="checkbox"]:checked ~ .content{
-    max-height: 1200px;
+    max-height: 1300px;
 }
 
 #drop-down li label input[type="checkbox"]:checked + label .arrow{
