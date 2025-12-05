@@ -83,6 +83,7 @@ h3 {
     border-radius: 6px;
     width: 75%;
     font-size: 1rem;
+    /* padding-inline-start: 1rem; */
 
     h4 {
         font-size: 1.3rem;
@@ -92,12 +93,13 @@ h3 {
     .arrow {
         /* margin-left: auto;
         align-items: flex-end; */
-        margin-inline-start: 5rem;
+        margin-inline-start: 4rem;
+        transform-origin: center;
     }
 
     ol {
         list-style-position: outside;
-        padding: 0.875rem 1rem
+        padding: 0.875rem 1rem;
     }
 }
 
@@ -177,6 +179,32 @@ h3 {
     }
 }
 
+@media (max-width: 1349px) {
+    .footnotes-2 {
+    width: 35%;
+    margin-inline-start: 5rem;
+    font-size: 1rem;
+    /* max-width: none; */
+
+    h4 {
+        font-size: 1.3rem;
+        padding-block-end: 0;
+        /* margin-inline-end: 1rem; */
+    }
+
+    .arrow {
+        /* margin-right: auto; */
+        /* align-items: flex-end;  */
+        /* margin-inline-start: 10rem; */
+        transform-origin: center;
+    }
+
+    ol {
+        /* list-style-position: outside; */
+        padding: 0.875rem 1rem;
+    }
+}
+}
 
 @media (max-width: 768px) {
     #drop-down li label {
@@ -204,7 +232,30 @@ h3 {
         margin-block-end: 2rem;
         padding: 0.75rem 0 0.75rem 0;
     }
-    
+
+    .footnotes-2 {
+    width: 45%;
+    margin-inline-start: 5rem;
+    font-size: 1rem;
+    /* max-width: none; */
+
+    h4 {
+        font-size: 1.3rem;
+        /* margin-inline-end: 1rem; */
+    }
+
+    .arrow {
+        margin-right: auto;
+        /* align-items: flex-end;  */
+        /* margin-inline-start: 10rem; */
+        /* transform-origin: center; */
+    }
+
+    ol {
+        /* list-style-position: outside; */
+        padding: 0.875rem 1rem;
+    }
+}
 }
 
 
@@ -234,5 +285,29 @@ h3 {
         padding-block-end: 2rem;
         padding: 0.75rem 0 0.75rem 0;
     }
+
+
+    .footnotes-2 {
+    width: 60%;
+    margin-inline-start: 4rem;
+    font-size: 1rem;
+    /* max-width: none; */
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        margin-right: auto;
+        /* align-items: flex-end;  */
+        /* margin-inline-start: 10rem; */
+        /* transform-origin: center; */
+    }
+
+    ol {
+        /* list-style-position: outside; */
+        padding: 0.875rem 1rem
+    }
+}
     
 }
