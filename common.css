@@ -118,6 +118,32 @@ nav .home-link {
 
 
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 3rem 1rem 3rem 1rem;
+    gap: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+
+}
+
+footer small {
+    font-size: 1.3rem;
+}
+
+footer a {
+    &:hover {
+        color: var(--color-1);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+}
+
 /* 
 .image {
     position: fixed;
@@ -285,19 +311,9 @@ nav .home-link {
             font-size: 1rem;
             line-height: 1.2rem;
     }
-}
 
-
-
-
-
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
+    footer {
+    font-size: 1rem;
     padding: 3rem 1rem 3rem 1rem;
     gap: 1rem;
     margin-top: 4rem;
@@ -305,14 +321,11 @@ footer {
 }
 
 footer small {
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
 }
 
-footer a {
-    &:hover {
-        color: var(--color-1);
-        text-decoration: underline;
-        font-weight: bold;
-    }
 
-}
+
+
+
