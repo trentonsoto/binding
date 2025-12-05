@@ -154,7 +154,7 @@ blockquote {
     }
 
     .r1 #accordion {
-        position: sticky;
+        /* position: sticky; */
         top: 5rem;
         z-index: 1;
     }
