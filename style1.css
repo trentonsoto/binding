@@ -1,0 +1,94 @@
+
+
+
+body {
+    background-image: url(image1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    font-size: 7rem;
+    padding-block-end: 20rem;
+    font-weight: bolder;
+    padding-inline: 3rem;
+}
+.colophon {
+    font-size: 1.5rem;
+    padding: 4rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    /* padding-inline: 4rem; */
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1250px) {
+        h1 {
+    font-size: 5.5rem;
+    padding-block-end: 10rem;
+    font-weight: bolder;
+}
+.colophon {
+    font-size: 2rem;
+    padding: 4rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    /* padding-inline: 4rem; */
+}
+}
+
+@media (max-width: 1024px ) {
+        h1 {
+    font-size: 4rem;
+    padding-block-end: 5rem;
+    font-weight: bolder;
+}
+.colophon {
+    font-size: 1.8rem;
+    padding: 4rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    /* padding-inline: 4rem; */
+}
+}
+
+@media (max-width: 768px) {
+        h1 {
+    font-size: 4rem;
+    padding-block-end: 5rem;
+    font-weight: bolder;
+}
+.colophon {
+    font-size: 1.3rem;
+    padding: 4rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    /* padding-inline: 4rem; */
+}
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+    font-size: 3rem;
+    padding-block-end: 10rem;
+    font-weight: bolder;
+}
+.colophon {
+    font-size: 1rem;
+    padding: 4rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    /* padding-inline: 4rem; */
+}
+}
