@@ -14,6 +14,19 @@ h3 {
 }
 
 
+.notes-reference {
+    font-size: 0.4rem;
+    font-weight: bold;
+    /* vertical-align: super; */
+    position: relative;
+    top: -0.2rem;
+    color: var(--accent-color);
+    &:hover {
+        color: var(--footnote-color);
+        text-decoration: underline;
+    }
+}
+
 #drop-down {
     padding-inline-start: 3rem;
     width: 90%; 
@@ -158,7 +171,7 @@ h3 {
 @media (min-width: 1350px) {
     .reading p {
         max-width: 58ch;
-        font-size: 2rem;
+        /* font-size: 2rem; */
     }
 
     .footnotes-2 p {
